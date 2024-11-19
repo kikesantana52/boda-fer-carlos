@@ -4,8 +4,8 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
-import parroquia from "../assets/img/parroquia.webp";
-import celebracion from "../assets/img/celebracion.webp";
+import parroquia from "../assets/img/parroquia.png";
+import celebracion from "../assets/img/celebracion.png";
 
 const CuandoDonde = () => {
   const openMaps = (link: string) => {
