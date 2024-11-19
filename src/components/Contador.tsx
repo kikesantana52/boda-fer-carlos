@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import ios from "../assets/img/ios.png";
-import android from "../assets/img/android.webp";
+import android from "../assets/img/android.png";
 
 const Contador = () => {
   // eslint-disable-next-line react-hooks/exhaustive-deps
