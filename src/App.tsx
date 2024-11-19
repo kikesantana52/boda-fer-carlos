@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import separator from "./assets/img/separator.png";
 import logo from "./assets/icons/1_no_background.png";
 
 import "./css/App.css";
@@ -43,9 +42,9 @@ function App() {
 
       <div className="mobile-only">
         <section id="home">
-          <h1 className="great-vibes-regular">Fernanda & Carlos</h1>
-          <img src={separator} alt="" />
-          <h2 className="cormorant-unicase-medium">08.FEB.2025</h2>
+          <h1 className="cinzel-decorative-regular">Fernanda & Carlos</h1>
+          <div className="divider"></div>
+          <h2 className="lato-regular">08.FEB.2025</h2>
         </section>
 
         <Contador />
@@ -66,7 +65,7 @@ function App() {
             nosotros.
           </h2>
 
-          <p className="cormorant-unicase-light">
+          <p className="cinzel-decorative-regular">
             Con mucho cariño: Fernanda & Carlos.
           </p>
         </div>

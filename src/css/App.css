@@ -1,4 +1,10 @@
 @import url(./fonts.scss);
+.divider {
+  height: 1px;
+  background-color: #fbf9f6;
+  width: 80%;
+}
+
 body,
 html {
   padding: 0;
@@ -65,7 +71,7 @@ html {
   .App #home h2 {
     margin: 0;
     margin-bottom: 2rem;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     opacity: 0;
     transform: translateY(-50px);
     animation: slideDownFadeIn 1.5s ease-out forwards;
@@ -77,8 +83,6 @@ html {
     justify-content: space-around;
   }
   .App #contador .contador .numero {
-    background-color: #a9c5ba;
-    color: #fbf9f6;
     padding: 1.3rem;
     margin: 10px;
     border-radius: 5rem;
@@ -129,6 +133,7 @@ html {
     padding: 0.7rem;
   }
   .App #cuando-donde .card .card-name {
+    text-align: center;
     font-weight: 500;
     font-size: 1.2rem;
   }
@@ -136,7 +141,6 @@ html {
     color: #666565;
     padding-left: 15px;
     padding-right: 15px;
-    text-align: left;
   }
   .App #codigo-vestimenta .img-container {
     width: 100%;
@@ -174,9 +178,9 @@ html {
   .App #mesa-regalos .cuenta-banco {
     margin: 0 15px;
     padding: 5px 10px;
-    border: #a9c5ba;
+    border: #929fa4;
     border-radius: 20px;
-    background-color: #a9c5ba;
+    background-color: #929fa4;
     color: #fbf9f6;
   }
   .App #mesa-regalos button {
@@ -187,7 +191,7 @@ html {
     gap: 4px;
     font-size: 1.2rem;
     color: #fbf9f6;
-    background-color: #a9c5ba;
+    background-color: #929fa4;
     margin: 15px;
     padding: 15px;
     width: 90%;

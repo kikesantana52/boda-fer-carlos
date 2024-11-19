@@ -1,41 +1,83 @@
-.bellefair-regular {
-  font-family: "Bellefair", serif;
-  font-weight: 400;
+.lato-thin {
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
   font-style: normal;
 }
 
-.cormorant-unicase-light {
-  font-family: "Cormorant Unicase", serif;
+.lato-light {
+  font-family: "Lato", sans-serif;
   font-weight: 300;
   font-style: normal;
 }
 
-.cormorant-unicase-regular {
-  font-family: "Cormorant Unicase", serif;
+.lato-regular {
+  font-family: "Lato", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
 
-.cormorant-unicase-medium {
-  font-family: "Cormorant Unicase", serif;
-  font-weight: 500;
-  font-style: normal;
-}
-
-.cormorant-unicase-semibold {
-  font-family: "Cormorant Unicase", serif;
-  font-weight: 600;
-  font-style: normal;
-}
-
-.cormorant-unicase-bold {
-  font-family: "Cormorant Unicase", serif;
+.lato-bold {
+  font-family: "Lato", sans-serif;
   font-weight: 700;
   font-style: normal;
 }
 
-.great-vibes-regular {
-  font-family: "Great Vibes", serif;
+.lato-black {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.lato-thin-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.lato-light-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.lato-regular-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.lato-bold-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.lato-black-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.cinzel-decorative-regular {
+  font-family: "Cinzel Decorative", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.cinzel-decorative-bold {
+  font-family: "Cinzel Decorative", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.cinzel-decorative-black {
+  font-family: "Cinzel Decorative", serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.bellefair-regular {
+  font-family: "Bellefair", serif;
   font-weight: 400;
   font-style: normal;
 }

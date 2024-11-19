@@ -4,8 +4,6 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
-import parroquia from "../assets/img/parroquia.png";
-import celebracion from "../assets/img/celebracion.png";
 
 const CuandoDonde = () => {
   const openMaps = (link: string) => {
@@ -15,8 +13,8 @@ const CuandoDonde = () => {
     <section id="cuando-donde" className="bellefair-regular">
       <h2 className="bellefair-regular">Cuándo y dónde</h2>
       <div className="card">
-        <h3 className="cormorant-unicase-bold">Ceremonia religiosa</h3>
-        <img src={parroquia} alt="" />
+        <h3 className="cinzel-decorative-regular">Ceremonia religiosa</h3>
+
         <div className="content">
           <p className="card-name">Parroquia María Reina del Palomar</p>
           <p>
@@ -34,8 +32,8 @@ const CuandoDonde = () => {
       </div>
 
       <div className="card">
-        <h3 className="cormorant-unicase-bold">Celebración</h3>
-        <img src={celebracion} alt="" />
+        <h3 className="cinzel-decorative-regular">Celebración</h3>
+
         <div className="content">
           <p className="card-name">Salón de eventos La Folié</p>
           <p>

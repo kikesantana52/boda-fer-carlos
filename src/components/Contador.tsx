@@ -47,7 +47,7 @@ const Contador = () => {
   }, []);
 
   return (
-    <section id="contador" className="bellefair-regular">
+    <section id="contador" className="cinzel-decorative-regular">
       <h2 className="bellefair-regular">¡Estás invitado!</h2>
       <p className="">Queremos que seas parte de este momento tan especial</p>
       <div className="flex contador ">

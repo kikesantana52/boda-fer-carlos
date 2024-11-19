@@ -1,5 +1,10 @@
 @import url(./fonts.scss);
 
+.divider {
+  height: 1px;
+  background-color: #fbf9f6;
+  width: 80%;
+}
 body,
 html {
   padding: 0;
@@ -37,7 +42,7 @@ html {
     #home {
       min-width: 100vw;
       min-height: 70vh;
-      background-image: url("/img/6_full.jpeg");
+      background-image: url(../assets/img/6_full.png);
       background-size: cover; /* Asegura que la imagen cubra toda la pantalla */
       background-position: center; /* Centra la imagen */
       background-repeat: no-repeat; /* Evita que la imagen se repita */
@@ -65,7 +70,7 @@ html {
       h2 {
         margin: 0;
         margin-bottom: 2rem;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         opacity: 0;
         transform: translateY(-50px);
         animation: slideDownFadeIn 1.5s ease-out forwards;
@@ -78,8 +83,6 @@ html {
       .contador {
         justify-content: space-around;
         .numero {
-          background-color: #a9c5ba;
-          color: #fbf9f6;
           padding: 1.3rem;
           margin: 10px;
           border-radius: 5rem;
@@ -128,6 +131,7 @@ html {
           padding: 0.7rem;
         }
         .card-name {
+          text-align: center;
           font-weight: 500;
           font-size: 1.2rem;
         }
@@ -135,7 +139,6 @@ html {
           color: #666565;
           padding-left: 15px;
           padding-right: 15px;
-          text-align: left;
         }
         padding: 10px;
         -webkit-box-shadow: 5px 5px 20px -12px rgba(0, 0, 0, 0.75);
@@ -187,9 +190,9 @@ html {
       .cuenta-banco {
         margin: 0 15px;
         padding: 5px 10px;
-        border: #a9c5ba;
+        border: #929fa4;
         border-radius: 20px;
-        background-color: #a9c5ba;
+        background-color: #929fa4;
         color: #fbf9f6;
       }
       button {
@@ -200,7 +203,7 @@ html {
         gap: 4px;
         font-size: 1.2rem;
         color: #fbf9f6;
-        background-color: #a9c5ba;
+        background-color: #929fa4;
         margin: 15px;
         padding: 15px;
         width: 90%;
