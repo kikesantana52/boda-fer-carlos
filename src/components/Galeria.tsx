@@ -1,8 +1,8 @@
 import React from "react";
-import galeria1 from "../assets/img/7.jpeg";
-import galeria2 from "../assets/img/9.jpeg";
-import galeria3 from "../assets/img/11.jpeg";
-import galeria4 from "../assets/img/13.jpeg";
+import galeria1 from "../assets/img/7.png";
+import galeria2 from "../assets/img/9.png";
+import galeria3 from "../assets/img/11.png";
+import galeria4 from "../assets/img/13.png";
 
 const Galeria = () => {
   return (
