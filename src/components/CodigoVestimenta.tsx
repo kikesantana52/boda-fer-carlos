@@ -1,6 +1,4 @@
 import React from "react";
-import hombre from "../assets/img/codigo-hombre.png";
-import mujer from "../assets/img/codigo-mujer.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPinterest } from "@fortawesome/free-brands-svg-icons";
 
@@ -9,8 +7,8 @@ const CodigoVestimenta = () => {
     <section id="codigo-vestimenta">
       <h2 className="bellefair-regular">Código de vestimenta</h2>
       <div className="img-container flex">
-        <img src={hombre} alt="" />
-        <img src={mujer} alt="" />
+        <img src="/img/codigo-hombre.png" alt="" />
+        <img src="img/codigo-mujer.png" alt="" />
       </div>
       <p className="cormorant-unicase-regular">Formal</p>
       <button

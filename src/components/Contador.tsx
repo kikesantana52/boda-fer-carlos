@@ -87,7 +87,7 @@ const Contador = () => {
             }
           >
             <img src={android} alt="" />
-            ANDROID
+            ANDROID/GOOGLE
           </button>
         </div>
       </div>
