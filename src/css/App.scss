@@ -1,0 +1,309 @@
+@import url(./fonts.scss);
+
+body,
+html {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+.bellefair-regular {
+  font-family: "Bellefair", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@supports (-webkit-touch-callout: none) {
+  button {
+    color: #000;
+    border-color: #000;
+  }
+}
+
+.App {
+  background-color: #fbf9f6;
+  @media (max-width: 450px) {
+    text-align: center;
+    section {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 1s ease-out, transform 1s ease-out;
+
+      &.visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    #home {
+      min-width: 100vw;
+      min-height: 70vh;
+      background-image: url("../../public/6_full.webp");
+      background-size: cover; /* Asegura que la imagen cubra toda la pantalla */
+      background-position: center; /* Centra la imagen */
+      background-repeat: no-repeat; /* Evita que la imagen se repita */
+      background-attachment: scroll;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center;
+      color: #fff;
+      h1 {
+        margin: 0;
+        font-size: 2rem;
+        opacity: 0;
+        transform: translateY(-50px);
+        animation: slideDownFadeIn 1.5s ease-out forwards;
+      }
+      img {
+        width: 50%;
+        height: auto;
+        opacity: 0;
+        transform: translateY(-50px);
+        animation: slideDownFadeIn 1.5s ease-out forwards;
+      }
+      h2 {
+        margin: 0;
+        margin-bottom: 2rem;
+        font-size: 1.5rem;
+        opacity: 0;
+        transform: translateY(-50px);
+        animation: slideDownFadeIn 1.5s ease-out forwards;
+      }
+    }
+
+    #contador {
+      text-align: center;
+
+      .contador {
+        justify-content: space-around;
+        .numero {
+          background-color: #a9c5ba;
+          color: #fbf9f6;
+          padding: 1.3rem;
+          margin: 10px;
+          border-radius: 5rem;
+          letter-spacing: 0.2rem;
+        }
+      }
+      .btn-container {
+        display: flex;
+        justify-content: space-around;
+      }
+      button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 48%;
+        background-color: #fbf9f6;
+        border-radius: 1rem;
+        padding: 0.7rem;
+        img {
+          height: 1rem;
+          margin-right: 5px;
+          width: auto;
+        }
+      }
+    }
+
+    #cuando-donde {
+      padding: 10px;
+      text-align: center;
+      img {
+        width: 90%;
+        height: auto;
+      }
+
+      .card {
+        svg {
+          margin-right: 5px;
+        }
+        button {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+          background-color: #fbf9f6;
+          border-radius: 1rem;
+          padding: 0.7rem;
+        }
+        .card-name {
+          font-weight: 500;
+          font-size: 1.2rem;
+        }
+        .content {
+          color: #666565;
+          padding-left: 15px;
+          padding-right: 15px;
+          text-align: left;
+        }
+        padding: 10px;
+        -webkit-box-shadow: 5px 5px 20px -12px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 5px 5px 20px -12px rgba(0, 0, 0, 0.75);
+        box-shadow: 5px 5px 20px -12px rgba(0, 0, 0, 0.75);
+      }
+    }
+
+    #codigo-vestimenta {
+      .img-container {
+        width: 100%;
+        justify-content: space-around;
+      }
+      img {
+        max-width: 50%;
+        height: auto;
+      }
+      button {
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        background-color: #fbf9f6;
+        border-radius: 1rem;
+        padding: 0.7rem;
+        font-size: 1rem;
+        svg {
+          margin-right: 5px;
+        }
+      }
+    }
+
+    #galeria {
+      .img-container {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 100%;
+        padding: 10px 15px;
+        gap: 8px;
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+
+    #mesa-regalos {
+      .cuenta-banco {
+        margin: 0 15px;
+        padding: 5px 10px;
+        border: #a9c5ba;
+        border-radius: 20px;
+        background-color: #a9c5ba;
+        color: #fbf9f6;
+      }
+      button {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 4px;
+        font-size: 1.2rem;
+        color: #fbf9f6;
+        background-color: #a9c5ba;
+        margin: 15px;
+        padding: 15px;
+        width: 90%;
+        height: auto;
+        border: none;
+        border-radius: 100px;
+        img {
+          height: 40px;
+          width: auto;
+        }
+      }
+    }
+
+    #confirmacion {
+      .form-container {
+        border: 2px solid #000;
+        margin: 10px 20px;
+        border-radius: 20px;
+        padding: 10px;
+        .confirm-btn {
+          background-color: #fbf9f6;
+          border-radius: 20px;
+          padding: 10px;
+          font-size: 1.2rem;
+        }
+        textarea {
+          background-color: #fbf9f6;
+          border: 1px solid #000;
+          border-radius: 10px;
+        }
+      }
+      .boletos-counter {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        label {
+          font-size: 2rem;
+        }
+        button {
+          padding: 10px;
+          border-radius: 30px;
+        }
+      }
+    }
+
+    #despedida {
+      margin-bottom: 20px;
+      padding-bottom: 40px;
+    }
+
+    .desktop-only {
+      display: none;
+    }
+  }
+
+  @media (min-width: 451px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    min-width: 100vw;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(-50px);
+    animation: slideDownFadeIn 1.5s ease-out forwards;
+    img {
+      width: 40%;
+      height: auto;
+    }
+
+    .mobile-only {
+      display: none;
+    }
+  }
+}
+
+@keyframes slideDownFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.flex {
+  display: flex;
+}
+.flex-column {
+  flex-direction: column;
+}
+
+.px-md {
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.gap-md {
+  gap: 1rem;
+}
+.gap-sm {
+  gap: 0.5rem;
+}

@@ -1,24 +1,76 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from "react";
+import separator from "./assets/img/separator.png";
+import logo from "./assets/icons/1_no_background.png";
+
+import "./css/App.css";
+
+import Contador from "./components/Contador";
+import CuandoDonde from "./components/CuandoDonde";
+import CodigoVestimenta from "./components/CodigoVestimenta";
+import Galeria from "./components/Galeria";
+import MesaRegalos from "./components/MesaRegalos";
+import Confirmacion from "./components/Confirmacion";
 
 function App() {
+  useEffect(() => {
+    const fadeInSections = document.querySelectorAll("section");
+    const fadeInOnScroll = () => {
+      fadeInSections.forEach((section) => {
+        const sectionTop = section.getBoundingClientRect().top;
+        const triggerBottom = window.innerHeight * 0.7;
+
+        if (sectionTop < triggerBottom) {
+          section.classList.add("visible");
+        }
+      });
+    };
+    window.addEventListener("scroll", fadeInOnScroll);
+    fadeInOnScroll();
+    return () => {
+      window.removeEventListener("scroll", fadeInOnScroll);
+    };
+  }, []);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
+      <div className="desktop-only">
+        <img src={logo} alt=" " />
+        <p className="bellefair-regular">
+          Esta página solo es compatible con dispositivos móviles. Por favor,
+          ábrela en un dispositivo móvil.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      </div>
+
+      <div className="mobile-only">
+        <section id="home">
+          <h1 className="great-vibes-regular">Fernanda & Carlos</h1>
+          <img src={separator} alt="" />
+          <h2 className="cormorant-unicase-medium">08.FEB.2025</h2>
+        </section>
+
+        <Contador />
+
+        <CuandoDonde />
+
+        <CodigoVestimenta />
+
+        <Galeria />
+
+        <MesaRegalos />
+
+        <Confirmacion />
+
+        <div id="despedida">
+          <h2 className="bellefair-regular">
+            Es un honor contar con tu presencia en este dia tan especial para
+            nosotros.
+          </h2>
+
+          <p className="cormorant-unicase-light">
+            Con mucho cariño: Fernanda & Carlos.
+          </p>
+        </div>
+      </div>
     </div>
   );
 }
