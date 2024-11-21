@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import ios from "../assets/img/ios.png";
-import android from "../assets/img/android.png";
+// import ios from "../assets/img/ios.png";
+// import android from "../assets/img/android.png";
 
 const Contador = () => {
   // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -47,9 +47,10 @@ const Contador = () => {
   }, []);
 
   return (
-    <section id="contador" className="cinzel-decorative-regular">
-      <h2 className="bellefair-regular">¡Estás invitado!</h2>
-      <p className="">Queremos que seas parte de este momento tan especial</p>
+    <section id="contador" className="">
+      <p className="cinzel-400">
+        La felicidad de la vida merece ser compartida
+      </p>
       <div className="flex contador ">
         <div>
           <p className="numero">{timeLeft.days}</p>
@@ -68,7 +69,7 @@ const Contador = () => {
           <p className="label">segundos</p>
         </div>
       </div>
-      <div className="flex flex-column px-md gap-sm ">
+      {/* <div className="flex flex-column px-md gap-sm ">
         Agrégalo a tu calendario
         <div className="btn-container">
           <button
@@ -90,7 +91,7 @@ const Contador = () => {
             ANDROID/GOOGLE
           </button>
         </div>
-      </div>
+      </div> */}
     </section>
   );
 };

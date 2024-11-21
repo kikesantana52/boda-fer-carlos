@@ -1,6 +1,6 @@
 import React from "react";
-import liverpool from "../assets/img/liverpool.png";
-import amazon from "../assets/img/amazon.png";
+import liverpool from "../assets/img/liverpool_black.png";
+import amazon from "../assets/img/amazon_black.png";
 
 function MesaRegalos() {
   return (

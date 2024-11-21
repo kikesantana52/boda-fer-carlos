@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url(./fonts.scss);
 .divider {
   height: 1px;
@@ -31,6 +32,25 @@ html {
   .App {
     text-align: center;
   }
+  .App .music {
+    position: fixed; /* Para que permanezca en su posición al hacer scroll */
+    bottom: 20px; /* Distancia desde la parte inferior de la ventana */
+    right: 20px; /* Distancia desde el lado derecho de la ventana */
+    width: 35px; /* Anchura del botón */
+    height: 35px; /* Altura del botón, igual a la anchura para que sea circular */
+    border: 1px solid #fff;
+    border-radius: 50%; /* Hace que el botón sea circular */
+    background-color: #f2eadf; /* Color de fondo (puedes personalizarlo) */
+    color: #fff; /* Color del texto o icono */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para darle un efecto flotante */
+    font-size: 12px; /* Tamaño del texto o icono */
+    display: flex; /* Centra el contenido dentro del botón */
+    align-items: center;
+    justify-content: center;
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    z-index: 1000; /* Asegura que quede por encima de otros elementos */
+    transition: transform 0.2s ease-in-out; /* Animación al pasar el mouse */
+  }
   .App section {
     opacity: 0;
     transform: translateY(20px);
@@ -43,7 +63,7 @@ html {
   .App #home {
     min-width: 100vw;
     min-height: 70vh;
-    background-image: url(../assets/img/6_full.png);
+    background-image: url(../assets/img/1.png);
     background-size: cover; /* Asegura que la imagen cubra toda la pantalla */
     background-position: center; /* Centra la imagen */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
@@ -60,6 +80,12 @@ html {
     opacity: 0;
     transform: translateY(-50px);
     animation: slideDownFadeIn 1.5s ease-out forwards;
+    text-shadow: 1px 1px 2px black;
+  }
+  .App #home .divider {
+    -webkit-box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.75);
   }
   .App #home img {
     width: 50%;
@@ -75,9 +101,11 @@ html {
     opacity: 0;
     transform: translateY(-50px);
     animation: slideDownFadeIn 1.5s ease-out forwards;
+    text-shadow: 1px 1px 2px black;
   }
   .App #contador {
     text-align: center;
+    font-family: "Cinzel", sans-serif;
   }
   .App #contador .contador {
     justify-content: space-around;
@@ -87,6 +115,7 @@ html {
     margin: 10px;
     border-radius: 5rem;
     letter-spacing: 0.2rem;
+    border: 1px solid #000;
   }
   .App #contador .btn-container {
     display: flex;
@@ -108,6 +137,7 @@ html {
   }
   .App #cuando-donde {
     padding: 10px;
+    padding-top: 40px;
     text-align: center;
   }
   .App #cuando-donde img {
@@ -144,10 +174,10 @@ html {
   }
   .App #codigo-vestimenta .img-container {
     width: 100%;
-    justify-content: space-around;
+    justify-content: center;
   }
   .App #codigo-vestimenta img {
-    max-width: 50%;
+    max-width: 20%;
     height: auto;
   }
   .App #codigo-vestimenta button {
@@ -180,8 +210,8 @@ html {
     padding: 5px 10px;
     border: #929fa4;
     border-radius: 20px;
-    background-color: #929fa4;
-    color: #fbf9f6;
+    background-color: #f2eadf;
+    color: #000;
   }
   .App #mesa-regalos button {
     display: flex;
@@ -190,8 +220,8 @@ html {
     align-items: center;
     gap: 4px;
     font-size: 1.2rem;
-    color: #fbf9f6;
-    background-color: #929fa4;
+    color: #000;
+    background-color: #f2eadf;
     margin: 15px;
     padding: 15px;
     width: 90%;
@@ -202,6 +232,11 @@ html {
   .App #mesa-regalos button img {
     height: 40px;
     width: auto;
+  }
+  .App #confirmacion .white {
+    color: #fbf9f6;
+    background-color: #fbf9f6;
+    border: none;
   }
   .App #confirmacion .form-container {
     border: 2px solid #000;

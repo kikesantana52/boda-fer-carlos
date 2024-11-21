@@ -59,7 +59,7 @@
 }
 
 .cinzel-decorative-regular {
-  font-family: "Cinzel Decorative", serif;
+  font-family: "Cinzel Decorative", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
@@ -78,6 +78,13 @@
 
 .bellefair-regular {
   font-family: "Bellefair", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.cinzel-400 {
+  font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
 }

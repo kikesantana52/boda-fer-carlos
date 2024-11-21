@@ -1,7 +1,8 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import logo from "./assets/icons/1_no_background.png";
 
 import "./css/App.css";
+import Sound from "react-sound";
 
 import Contador from "./components/Contador";
 import CuandoDonde from "./components/CuandoDonde";
@@ -9,8 +10,13 @@ import CodigoVestimenta from "./components/CodigoVestimenta";
 import Galeria from "./components/Galeria";
 import MesaRegalos from "./components/MesaRegalos";
 import Confirmacion from "./components/Confirmacion";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faMusic } from "@fortawesome/free-solid-svg-icons";
 
 function App() {
+  const [playStatus, setplayStatus] = useState<
+    "STOPPED" | "PLAYING" | "PAUSED"
+  >("STOPPED");
   useEffect(() => {
     const fadeInSections = document.querySelectorAll("section");
     const fadeInOnScroll = () => {
@@ -32,6 +38,18 @@ function App() {
 
   return (
     <div className="App">
+      <Sound
+        url="https://cdn.bazehits.com/uploads/music/2024/05/Billie-Eilish-BIRDS-OF-AHER-(Bazehits).mp3"
+        playStatus={playStatus}
+      />
+      <button
+        className="music"
+        onClick={() =>
+          setplayStatus(playStatus !== "PLAYING" ? "PLAYING" : "PAUSED")
+        }
+      >
+        <FontAwesomeIcon icon={faMusic} />
+      </button>
       <div className="desktop-only">
         <img src={logo} alt=" " />
         <p className="bellefair-regular">
