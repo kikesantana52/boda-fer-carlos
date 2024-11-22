@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import logo from "./assets/icons/1_no_background.png";
 
 import "./css/App.css";
-// import Sound from "react-sound";
+import Sound from "react-sound";
 
 import Contador from "./components/Contador";
 import CuandoDonde from "./components/CuandoDonde";
@@ -10,16 +10,16 @@ import CodigoVestimenta from "./components/CodigoVestimenta";
 import Galeria from "./components/Galeria";
 import MesaRegalos from "./components/MesaRegalos";
 import Confirmacion from "./components/Confirmacion";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { faMusic } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faMusic } from "@fortawesome/free-solid-svg-icons";
 
 import * as XLSX from "xlsx";
 import { useSearchParams } from "react-router-dom";
 
 function App() {
-  // const [playStatus, setplayStatus] = useState<
-  //   "STOPPED" | "PLAYING" | "PAUSED"
-  // >("STOPPED");
+  const [playStatus, setplayStatus] = useState<
+    "STOPPED" | "PLAYING" | "PAUSED"
+  >("STOPPED");
   const [numeroBoletos, setNumeroBoletos] = useState(0);
   const [familia, setFamilia] = useState("");
   const [data, setdata] = useState<any>();
@@ -93,7 +93,7 @@ function App() {
   return (
     <div className="App">
       <div>
-        {/* <Sound
+        <Sound
           url="https://cdn.bazehits.com/uploads/music/2024/05/Billie-Eilish-BIRDS-OF-AHER-(Bazehits).mp3"
           playStatus={playStatus}
         />
@@ -104,7 +104,7 @@ function App() {
           }
         >
           <FontAwesomeIcon icon={faMusic} />
-        </button> */}
+        </button>
         <div className="desktop-only">
           <img src={logo} alt=" " />
           <p className="bellefair-regular">

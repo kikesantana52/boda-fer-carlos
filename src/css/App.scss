@@ -31,6 +31,26 @@ html {
   background-color: #fbf9f6;
   @media (max-width: 450px) {
     text-align: center;
+
+    .music {
+      position: fixed; /* Para que permanezca en su posición al hacer scroll */
+      bottom: 20px; /* Distancia desde la parte inferior de la ventana */
+      right: 20px; /* Distancia desde el lado derecho de la ventana */
+      width: 35px; /* Anchura del botón */
+      height: 35px; /* Altura del botón, igual a la anchura para que sea circular */
+      border: 1px solid #fff;
+      border-radius: 50%; /* Hace que el botón sea circular */
+      background-color: #f2eadf; /* Color de fondo (puedes personalizarlo) */
+      color: #fff; /* Color del texto o icono */
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para darle un efecto flotante */
+      font-size: 12px; /* Tamaño del texto o icono */
+      display: flex; /* Centra el contenido dentro del botón */
+      align-items: center;
+      justify-content: center;
+      cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+      z-index: 1000; /* Asegura que quede por encima de otros elementos */
+      transition: transform 0.2s ease-in-out; /* Animación al pasar el mouse */
+    }
     section {
       opacity: 0;
       transform: translateY(20px);
@@ -45,10 +65,10 @@ html {
     #home {
       min-width: 100vw;
       min-height: 70vh;
-      background-image: url(../assets/img/1.png);
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
+      background-image: url("../assets/img/1.png");
+      background-size: cover; /* Asegura que la imagen cubra toda la pantalla */
+      background-position: center; /* Centra la imagen */
+      background-repeat: no-repeat; /* Evita que la imagen se repita */
       background-attachment: scroll;
 
       display: flex;
