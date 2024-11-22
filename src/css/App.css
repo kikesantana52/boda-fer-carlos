@@ -6,6 +6,10 @@
   width: 80%;
 }
 
+.loader {
+  margin: auto;
+}
+
 body,
 html {
   padding: 0;
