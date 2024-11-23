@@ -242,6 +242,9 @@ html {
     background-color: #fbf9f6;
     border: none;
   }
+  .App #confirmacion .no-ninos {
+    margin: 10px 5px;
+  }
   .App #confirmacion .form-container {
     border: 2px solid #000;
     margin: 10px 20px;

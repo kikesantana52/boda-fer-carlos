@@ -126,6 +126,13 @@ function Confirmacion({ numBoletos, familia, initialData, posicion }: IProps) {
                   onChange={(e) => setMensaje(e.target.value)}
                 />
 
+                <div className="no-ninos bellefair-regular">
+                  Para que todos nuestros invitados puedan disfrutar sin
+                  preocupaciones, este evento será exclusivamente para adultos.
+                  Agradecemos su comprensión y esperamos contar con su
+                  presencia.
+                </div>
+
                 <button
                   className="confirm-btn"
                   onClick={() => handleSubmit("ASISTIRE")}

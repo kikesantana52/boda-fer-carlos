@@ -93,18 +93,6 @@ function App() {
   return (
     <div className="App">
       <div>
-        <Sound
-          url="https://cdn.bazehits.com/uploads/music/2024/05/Billie-Eilish-BIRDS-OF-AHER-(Bazehits).mp3"
-          playStatus={playStatus}
-        />
-        <button
-          className="music"
-          onClick={() =>
-            setplayStatus(playStatus !== "PLAYING" ? "PLAYING" : "PAUSED")
-          }
-        >
-          <FontAwesomeIcon icon={faMusic} />
-        </button>
         <div className="desktop-only">
           <img src={logo} alt=" " />
           <p className="bellefair-regular">
@@ -114,6 +102,18 @@ function App() {
         </div>
 
         <div className="mobile-only">
+          <Sound
+            url="https://cdn.bazehits.com/uploads/music/2024/05/Billie-Eilish-BIRDS-OF-AHER-(Bazehits).mp3"
+            playStatus={playStatus}
+          />
+          <button
+            className="music"
+            onClick={() =>
+              setplayStatus(playStatus !== "PLAYING" ? "PLAYING" : "PAUSED")
+            }
+          >
+            <FontAwesomeIcon icon={faMusic} />
+          </button>
           <section id="home">
             <h1 className="cinzel-decorative-regular">Fernanda & Carlos</h1>
             <div className="divider"></div>
